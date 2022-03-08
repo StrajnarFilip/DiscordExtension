@@ -1,0 +1,22 @@
+{
+    "name": "Discord Extension",
+    "version": "1.0",
+    "description": "Actually mute people",
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.discord.com/*"
+            ],
+            "css":[
+                "theme.css"
+            ],
+            "js": [
+                "ext.js"
+            ]
+        }
+    ],
+    "manifest_version": 3
+}
